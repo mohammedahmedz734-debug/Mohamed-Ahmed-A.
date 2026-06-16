@@ -1,0 +1,893 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css);
+*{
+padding: 0;
+margin:0;
+box-sizing: border-box;
+text-align: none;
+list-style-type: none;
+font-family: "inter", sans-serif;
+}
+
+:root{
+    --main-color: #c9f31d;
+    --p-color: #8a8a8a;
+    --bg-color: #1f1f1f;
+    --white-color: #fff;
+    --black-color: #070707;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body{
+    background: #131313;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+
+img{
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--white-color);
+    font-family: "DN Sans", sans-serif;
+}
+
+span{
+    color: var(--main-color);
+}
+
+p{
+    color: var(--p-color);
+}
+
+section{
+    padding: 80px 0;
+}
+
+.top-section{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.top-section h2{
+    font-size: 30px;
+}
+
+
+
+
+/* btns */
+
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn{
+    background: var(--main-color);
+    padding: 14px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--black-color);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn:hover{
+    scale: 1.1;
+}
+
+.btn_no_bg{
+    color: var(--white-color);
+    text-transform: capitalize;
+    text-decoration: underline;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn_no_bg:hover{
+    color: var(--main-color);
+}
+
+
+
+
+.bg-lines span{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    width: 1px;
+    -webkit-animation: left-right 18s infinite;
+    animation: left-right 18s infinite;
+}
+
+.bg-lines span:nth-child(1){
+    left: 10%;
+}
+.bg-lines span:nth-child(2){
+    left: 20%;
+}
+.bg-lines span:nth-child(3){
+    left: 30%;
+}
+.bg-lines span:nth-child(4){
+    left: 40%;
+}
+.bg-lines span:nth-child(5){
+    left: 50%;
+}
+.bg-lines span:nth-child(6){
+    left: 60%;
+}
+.bg-lines span:nth-child(7){
+    left: 70%;
+}
+.bg-lines span:nth-child(8){
+    left: 80%;
+}
+.bg-lines span:nth-child(9){
+    left: 90%;
+}
+
+
+@keyframes left-right {
+    0%{
+        -webkit-animation: translatex(0);
+        transform: translatex(0);
+    }
+    50%{
+        -webkit-animation: translatex(-100px);
+        transform: translatex(-100px);  
+    }
+    100%{
+          -webkit-animation: translatex(0);
+        transform: translatex(0);
+    }
+}
+
+
+
+
+/* background lines */
+
+
+
+
+
+/* start header */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+header.active{
+    background: var(--black-color);
+    border-bottom: 1px solid #56565697;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header nav .logo span{
+    color: var(--main-color);
+}
+
+header nav .logo img{
+    width: 200px;
+}
+
+header nav .links{
+    display: flex ;
+    gap: 40px;
+}
+
+header nav .links a{
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header nav .links a:hover{
+    color: var(--main-color);
+}
+
+header nav .icons{
+    display: flex;
+    gap: 30px;
+}
+
+header nav .icons a{
+    color: var(--main-color);
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+header nav .icons a:hover{
+    scale: 1.4;
+}
+
+
+
+/* start hero */
+
+.hero{
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero .div-text{
+    width: 50%;   
+}
+.hero .div-text h4{
+    color: var(--p-color);
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.hero .div-text h1{
+    font-size: 70px;
+}
+.hero .div-text h2{
+   font-size: 70px;
+   font-weight: normal;
+   line-height: 0.9;
+}
+.hero .div-text p{
+    margin: 30px 0;
+    font-size: 18px;
+    width: 80%;
+    line-height: 1.7;
+}
+
+.hero .btn{
+    font-size: 20px;
+    padding: 18px 50px;
+}
+
+
+
+
+
+
+.hero .div_img{
+    width: 40%;
+    position: relative;
+    border-radius: 0 0 600px 600px;
+    overflow: hidden;
+}
+.hero .div_img .bg_img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+/* start about */
+
+.about .container{
+    background: var(--black-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px;
+    padding: 50px;
+
+}
+
+.about .div-text{
+    width: 50%;
+}
+
+.about .div-text h5{
+    color: var(--p-color);
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+
+
+.about .div-text h2{
+    font-size: 45px;
+    margin: 25px 0 5px ;
+}
+
+.about .div-text h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about .div-text p{
+    line-height: 1.8;
+}
+
+.about .div-text ul{
+    display: flex;
+    color: var(--white-color);
+    margin: 30px 0 20px;
+    flex-wrap: wrap;
+}
+
+.about .div-text ul li{
+    width: 45%;
+    font-weight: bold;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.about .div-text ul li i{
+    color: var(--main-color);
+}
+
+.about .div-img{
+    width: 35%;
+}
+
+/* end about */
+
+
+
+
+
+
+/* start services */
+
+
+.services .boxs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services .boxs .box{
+    width: 30%;
+    text-align: center;
+    padding: 50px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+.services .boxs .box i{
+    color: var(--main-color);
+    font-size: 70px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.services .boxs .box h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.services .boxs .box p{
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.services .boxs .box:hover{
+    border-color: var(--main-color);
+}
+
+.services .boxs .box:hover i{
+    scale: 1.2;
+}
+
+
+/* end services */
+
+
+/* start projects */
+
+.projects .project-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.projects .project-box img{
+    width: 45%;
+}
+
+.projects .project-box .text{
+    margin-left: 100px;
+    width: calc(50% - 100px);
+}
+
+.projects .project-box .text h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.projects .project-box .text h3 a{
+    font-size: 40px;
+    color: var(--white-color);
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.projects .project-box .text h3 a:hover{
+    color: var(--main-color);
+}
+
+.projects .project-box .text p{
+    margin: 30px 0 50px;
+    line-height: 1.8;
+}
+
+.projects .project-box .text .link{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    font-size: 20px;
+    color: var(--black-color);
+    background: var(--main-color);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    rotate: 45deg;
+    transition: 0.3s ease-in-out;
+}
+
+.projects .project-box .text .link:hover{
+    scale: 1.2;
+}
+
+.projects .project-box.project-box2{
+    flex-direction: row-reverse;
+}
+
+/* end projects */
+
+
+/* start contact */
+
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .top-section{
+    margin: 100px;
+}
+
+.contact .soial-contact{
+   width:  100%;
+   margin-bottom: 40px;
+}
+
+.contact .soial-contact h2{
+    color: var(--white-color);
+    margin-bottom: 40px;
+}
+
+.contact .soial-contact .links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contact .soial-contact .links a{
+    color: var(--white-color);
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.contact .soial-contact .links a i{
+    color: var(--bg-color);
+    margin-right: 5px;
+    width: 45px;
+    height: 45px;
+    background: var(--main-color);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+}
+
+.contact .soial-contact .links a:hover{
+    left: 15px;
+}
+
+
+.contact form{
+    width: 60%;
+    text-align: center;
+}
+
+.contact form .inpts-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.contact form .inpts-form input,
+.contact form .inpts-form textarea{
+
+    border-radius: 5px;
+    padding: 20px;
+    outline: none;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+    transition: 0.3s;
+
+}
+
+.contact form .inpts-form input{
+    width: 45%;
+}
+
+.contact form .inpts-form textarea{
+    width: 100%;
+}
+
+
+.contact form .inpts-form input:focus,
+.contact form .inpts-form textarea:focus{
+    border-color: var(--main-color);
+}
+
+
+.contact .btn{
+    outline: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .btn:hover{
+     scale: 1.1;
+}
+
+
+/* end contact */
+
+
+
+
+/* start responsive */
+
+.close-menu{
+    display: none;
+}
+header .links .logo{
+    display: none;
+}
+.icon-menu{
+    display: none;
+}
+
+@media (max-width:1250px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width:1000px){
+    header nav .links{
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        width: 400px;
+        background: var(--black-color);
+        left: -400px;
+        padding: 50px 0;
+        height: 100%;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        transition: 0.3s;
+    }
+
+     header nav .links.active{
+        left: 0;
+     }
+
+    .close-menu{
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    header .links .logo{
+        display: block;
+        font-size: 30px;
+    }
+    .icon-menu{
+        display: block;
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+/* responseve home */
+
+@media (max-width:1000px){
+
+    .hero .div-text h4{
+        font-size: 25px;
+    }
+    .hero .div-text h1{
+        font-size: 36px;
+    }
+    .hero .div-text h2{
+        font-size: 40px;
+    }
+    .hero .div-text p{
+        font-size: 16px;
+        margin: 30px auto;
+    }
+    .hero .btn{
+        font-size: 18px;
+        padding: 14px 40px;
+    }
+    .hero .container{
+        flex-direction: column;
+    }
+    .hero .div-text{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+     .hero .btns{
+        justify-content: center;
+     }
+      .hero{
+        height: auto;
+      }
+
+      .about .container{
+        flex-direction: column;
+      }
+       .about .div-text{
+        width: 100%;
+        margin-bottom: 50px;
+       }
+        .about .div-img{
+            width: 45%;
+        }
+
+
+        .services .boxs .box{
+            width: 47%;
+            margin-bottom: 30px;
+        }
+
+        .projects .project-box .text h3 a{
+            font-size: 25px;
+        }
+         .projects .project-box .text h4{
+            font-size: 15px;
+         }
+          .projects .project-box .text p{
+            font-size: 14px;
+          }
+            .projects .project-box .text{
+                width: calc(50% - 50px);
+                margin-left: 50px;
+            }
+
+
+            .contact .container{
+                flex-direction: column;
+            }
+            .contact .soial-contact{
+                width: 100%;
+            }
+              .contact .soial-contact .links{
+                flex-direction: row;
+                flex-wrap: wrap;
+              }
+               .contact .soial-contact .links a{
+                width: 50%;
+                font-size: 16px;
+               }
+                  .contact .soial-contact .links a i{
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+
+                  }
+
+                  .contact form{
+                    width: 75%;
+                    margin: 0 auto;
+                  }
+                    .contact .btn{
+                    font-size: 16px;
+                    padding: 13px 28px;
+                  }
+                
+
+  
+}
+
+
+
+
+
+
+
+@media (max-width:500px){
+
+    .btn{
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+   header nav .icons a{
+    font-size: 20px;
+   }
+header nav .icons{
+    gap: 15px;
+    align-items: center;
+}
+header nav .logo img{
+    width: 150px;
+}
+header nav .links{
+    width: 100%;
+    left: -100%;
+}
+.icon-menu{
+    margin-left: 15px;
+}
+
+
+    .hero .div-text h4{
+        font-size: 22px;
+    }
+    .hero .div-text h1{
+        font-size: 35px;
+    }
+    .hero .div-text h2{
+        font-size: 45px;
+    }
+    .hero .div-text p{
+        font-size: 14px;
+        margin: 30px auto;
+        width: 100%;
+    }
+    .hero .div_img{
+        width: 75%;
+    }
+    .hero .btn{
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+
+
+
+   .about .div-text h2{
+    font-size: 30px;
+   }
+    .about .div-text h4{
+        font-size: 20px;
+    }
+     .about .div-text p{
+        font-size: 14px;
+     }
+      .about .div-text ul li{
+        width: 100%;
+        font-size: 14px;
+      }
+       .about .div-img{
+        width: 85%;
+       }
+
+   
+   .top-section h2{
+    font-size: 22px;
+   }  
+   
+   .services .boxs .box{
+    width: 100%;
+   }
+     .services .boxs .box i{
+        font-size: 55px;
+     }
+
+     .projects .project-box{
+        flex-direction: column;
+     }
+      .projects .project-box.project-box2{
+        flex-direction: column;
+      }
+      
+       .projects .project-box img{
+        width: 100%;
+        margin-bottom: 30px;
+       }
+        .projects .project-box .text{
+            width: 100%;
+            margin-left: 0px;
+        }
+          .projects .project-box .text p{
+            margin: 20px 0 30px;
+          }
+
+
+          .contact .soial-contact .links{
+            flex-direction: column;
+          }
+            .contact .soial-contact .links a{
+                width: 100%;
+            }
+
+            .projects{
+                padding-bottom: 40px;
+            }
+
+            .contact{
+                padding-top: 0;
+            }
+            .contact .top-section{
+                margin-bottom: 60px;
+            }
+            .contact form{
+                width: 100%;
+            }
+            .contact form .inpts-form input{
+                width: 100%;
+                padding: 15px 20px;
+                margin-bottom: 20px;
+            }
