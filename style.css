@@ -21,6 +21,8 @@ body{
     background: #131313;
 }
 
+
+
 .container{
     width: 80%;
     margin: auto;
@@ -517,7 +519,7 @@ header nav .icons a:hover{
 .contact .soial-contact .links a{
     color: var(--white-color);
     font-size: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     position: relative;
     left: 0;
     transition: 0.3s;
@@ -568,7 +570,7 @@ header nav .icons a:hover{
 }
 
 .contact form .inpts-form input{
-    width: 45%;
+    width: 48%;
 }
 
 .contact form .inpts-form textarea{
@@ -891,3 +893,4 @@ header nav .links{
                 padding: 15px 20px;
                 margin-bottom: 20px;
             }
+        }
